@@ -1,0 +1,126 @@
+* {box-sizing: border-box;}
+
+html, body {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+    flex-direction: column;
+    background-color: #a0d9f0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.source-sans 3-<uniquifier> {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1 {display: block;
+    font-size: 2.5em;
+    font-family: "Source Sans 3", sans-serif;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1.title{
+    display: center;
+    text-align: center;
+}
+
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 1px;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.main-nav-item {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 5px;
+    display: inline-flex;
+    padding: 6px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2;
+    border: 0;
+    background: #AFE8FF;
+}
+
+.yourLocation {
+    width: 225px;
+    height: 44px;
+    line-height: 0.1;
+    border-radius: 2px;
+    border: 1px solid #A70079;
+    background: #FF00B8;
+    box-shadow: 4px 4px 6px 0px rgba(0, 150, 210, 0.40);
+    margin-bottom: 20px;
+}
+
+.getWeather {
+  width: 225px;
+  height: 85px; 
+  border-radius: 2px;
+  border: 1px solid #A70079;
+  background: #FF00B8;
+  box-shadow: 4px 4px 6px 0px rgba(0, 150, 210, 0.40);
+  margin-top: 40px;
+}
+
+.weatherLocator {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text" i] {
+    padding-block: 10px;
+    padding-inline: 30px;
+}
+
+.background-image {
+  /Users/Jonnieuk1/Desktop/FEWD_70_GA_Jon/EnviroBomb/images/EnviroBomb_Background.png;
+}
