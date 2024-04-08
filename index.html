@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div>
+   <header>
     <nav class="main-nav">
         <button class="main-nav-item">Temperature check</button>
         <button class="main-nav-item">Climate compared</button>
@@ -23,8 +23,22 @@
         <button class="main-nav-item">Change it</button>
         <button class="main-nav-item">About us</button>
       </nav>
-    </div>
-    <div>
+
+      <nav class="mobile-nav-trigger">
+        <img src="images/Mobile_Menu.svg" id="myBurger">
+      </nav>
+    
+
+    <nav class="mobile-nav" id="mobile-nav-target"> 
+        <button class="mobile-nav-item">Temperature check</button>
+        <button class="mobile-nav-item">Climate compared</button>
+        <button class="mobile-nav-item">The hope</button>
+        <button class="mobile-nav-item">Change it</button>
+        <button class="mobile-nav-item">About us</button>
+         </nav>
+    </header>
+
+   <main><div>
         <h1 class="title"><i>Enviro</i>Bomb</h1>
     </div>
    
@@ -38,7 +52,9 @@
         <button class="getWeather">
             <h3>> TEMPERATURE CHECK</h3>
         </button>
+    </main>
         </div>
-
+    <script src="script.js">
+    </script>
 </body>
 </html>

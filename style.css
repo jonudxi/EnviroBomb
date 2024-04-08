@@ -10,21 +10,21 @@ html, body {
     background-color: #a0d9f0;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
-.playfair-display-<uniquifier> {
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 900 */
+.playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 900;
   font-style: normal;
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 900
+/* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 200 to 900 */
 
-.source-sans 3-<uniquifier> {
+.source-sans {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -67,12 +67,39 @@ p {
     font-size: 18px;
     line-height: 1.1;
     padding: 1px;
-  }
+}
 
-  .main-nav {
-    display: flex;
+.main-nav {
+    display: none;
     justify-content: space-between;
-  }
+}
+
+@media (min-width: 768px) {
+    .main-nav 
+    {
+      display: flex;
+    }
+}
+
+.mobile-nav-trigger {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav-trigger
+    {
+      display: none;
+    }
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.show {
+  display:flex
+}
+
 
 .main-nav-item {
     font-family: "Source Sans 3", sans-serif;
@@ -121,6 +148,16 @@ input[type="text" i] {
     padding-inline: 30px;
 }
 
-.background-image {
-  /Users/Jonnieuk1/Desktop/FEWD_70_GA_Jon/EnviroBomb/images/EnviroBomb_Background.png;
+body {
+  background-image: url("images/EnviroBomb_Background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+
+/* Needs CSS properties name images/EnviroBomb_Background.png;
+
+.mobile-nav-trigger {
+"images/Mobile_Menu.svg";
+}
+*/
